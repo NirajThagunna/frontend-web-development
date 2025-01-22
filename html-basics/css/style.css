@@ -2,13 +2,22 @@
   font-family: sans-serif;
 } */
 
+/* Universal Selector */
+
+* {
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+
+  border-top: 10px solid #1098ad;
+}
+
 h1,
 h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -65,4 +74,61 @@ li {
 
 .related {
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+body {
+  /* background-color: ; */
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* Misconception: this won't work */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+a:link {
+  /* unvisited link - i.e. an anchor tag that contains an href */
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* visited link - link that is clicked or opened */
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  /* mouse over link */
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  /* active link - link that is currently being clicked at the time of clicking */
+  background-color: black;
+  font-style: italic;
 }
